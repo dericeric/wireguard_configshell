@@ -3,7 +3,7 @@ do
 ser=network_wg
 conf=./wg/0$n.conf
 c=$(($n+1))
-cip=192.168.100.$c/32
+cip=10.0.0.$c/32
 cpub=$(cat ./wg/0$n/cpublickey)
 cpri=$(cat ./wg//0$n/cprivatekey)
 cshare=$(cat ./wg/0$n/sharekey)
@@ -21,7 +21,7 @@ echo "        option persistent_keepalive '25'">>$ser
 echo [Interface]>$conf
 echo Address = $cip >>$conf
 echo PrivateKey = $cpri>>$conf
-echo DNS = 114.114.114.114 >>$conf
+echo DNS = 8.8.8.8 >>$conf
 echo [Peer]>>$conf
 echo PublicKey = $spub>>$conf
 echo PresharedKey = $cshare>>$conf
