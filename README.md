@@ -37,7 +37,7 @@ wireguard-tools
 
 ### 第一步，下载项目文件到本地。
 
-`git clone https://github.com/maytom2016/wireguard_configshell.git`
+`git clone https://github.com/dericeric/wireguard_configshell.git`
 
 进入win文件夹。
 
